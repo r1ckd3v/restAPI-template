@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mainRoutes = require('./routes/main');
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 // initialize body-parser for application/json
 app.use(bodyParser.json());
